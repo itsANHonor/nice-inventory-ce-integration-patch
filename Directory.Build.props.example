@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<!--
+	  Copy to Directory.Build.props next to the .sln / Source folder and set RimRoot to your game folder.
+	  Example (Windows):
+	  <Project>
+	    <PropertyGroup>
+	      <RimRoot>C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimRoot>
+	    </PropertyGroup>
+	  </Project>
+	-->
+</Project>

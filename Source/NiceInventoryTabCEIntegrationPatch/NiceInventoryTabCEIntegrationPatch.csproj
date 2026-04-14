@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>12</LangVersion>
+		<Nullable>enable</Nullable>
+		<RootNamespace>NiceInventoryTabCEIntegrationPatch</RootNamespace>
+		<AssemblyName>NiceInventoryTabCEIntegrationPatch</AssemblyName>
+		<OutputPath>..\..\1.6\Assemblies\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<NoWarn>$(NoWarn);CS8632</NoWarn>
+	</PropertyGroup>
+	<!-- Set RimRoot to your RimWorld install (folder containing RimWorldWin64_Data). Override in Directory.Build.props if needed. -->
+	<PropertyGroup>
+		<RimRoot Condition="'$(RimRoot)' == ''">S:\Steam\steamapps\common\RimWorld</RimRoot>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(RimRoot)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(RimRoot)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<PackageReference Include="Lib.Harmony" Version="2.3.5">
+			<PrivateAssets>all</PrivateAssets>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

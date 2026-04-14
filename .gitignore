@@ -1,0 +1,9 @@
+# MSBuild / Visual Studio
+**/obj/
+**/bin/
+*.user
+*.suo
+.vs/
+
+# JetBrains
+.idea/

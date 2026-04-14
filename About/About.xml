@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Nice Inventory Tab CE Integration Patch</name>
+	<author>itsANHonor</author>
+	<packageId>itsANHonor.NiceInventoryTabCEIntegrationPatch</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>Stops Nice Inventory Tab from crashing when the gear info widget is opened from Combat Extended's inventory tab (missing Odyssey extra block). Safe no-op when the widget is fully initialized.</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>ceteam.combatextended</packageId>
+			<displayName>Combat Extended</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Andromeda.NiceInventoryTab</packageId>
+			<displayName>Nice Inventory Tab</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3609897594</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Andromeda.NITICE</packageId>
+			<displayName>Nice Inventory Tab CE Integration</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3609970449</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Andromeda.NiceInventoryTab</li>
+		<li>Andromeda.NITICE</li>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+</ModMetaData>
