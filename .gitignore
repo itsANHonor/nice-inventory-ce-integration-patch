@@ -7,3 +7,6 @@
 
 # JetBrains
 .idea/
+
+# Debug symbols (not needed at runtime)
+*.pdb
